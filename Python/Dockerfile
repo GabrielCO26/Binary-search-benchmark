@@ -1,4 +1,4 @@
-FROM python:3
+FROM python
 COPY . /app
 WORKDIR /app
 CMD python ./solve.py
