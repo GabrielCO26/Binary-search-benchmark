@@ -30,11 +30,11 @@ fn operaciones_matriciales(n: usize) -> f64 {
         }
     }
     
-    let duracion = inicio.elapsed().as_secs_f64();
+    let duracion = inicio.elapsed().as_nanos() as f64 / 1_000_000.0; // Convertir a milisegundos
     duracion
 }
 
 fn main() {
-    println!("Tiempo de ejecución para n=100: {:.4}", 
+    println!("Tiempo de ejecución para n=100: {:.4} ms", 
         operaciones_matriciales(100));
 }
