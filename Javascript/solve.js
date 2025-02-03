@@ -25,7 +25,7 @@ function operacionesMatriciales(n) {
     }
     
     const fin = performance.now();
-    return (fin - inicio) / 1000;
+    return fin - inicio;
 }
 
-console.log(`Tiempo de ejecución para n=100: ${operacionesMatriciales(100).toFixed(4)} segundos`);
+console.log(`Tiempo de ejecución para n=100: ${operacionesMatriciales(100).toFixed(4)} ms`);
