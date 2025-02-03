@@ -25,11 +25,11 @@ public class solve {
         }
         
         long fin = System.nanoTime();
-        return (fin - inicio) / 1_000_000_000.0;
+        return (fin - inicio) / 1000000.0;
     }
 
     public static void main(String[] args) {
-        System.out.printf("Tiempo de ejecución para n=100: %.4f segundos%n", 
+        System.out.printf("Tiempo de ejecución para n=100: %.4f ms%n", 
             operacionesMatriciales(100));
     }
 }
