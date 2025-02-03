@@ -15,7 +15,6 @@ def operaciones_matriciales(n):
                 resultado[i][j] += matriz_a[i][k] * matriz_b[k][j]
     
     fin = time.time()
-    return fin - inicio
+    return (fin - inicio) * 1000  # Convertir a milisegundos
 
-
-print(f"Tiempo de ejecución para n=100: {operaciones_matriciales(100):.4f} segundos")
+print(f"Tiempo de ejecución para n=100: {operaciones_matriciales(100):.4f} ms")
