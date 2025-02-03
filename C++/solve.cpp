@@ -32,6 +32,7 @@ double operacionesMatriciales(int n) {
     }
     
     auto fin = std::chrono::high_resolution_clock::now();
+    double tiempo_ms = std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count() / 1000.0;
     
     // Liberar memoria
     for (int i = 0; i < n; i++) {
@@ -43,11 +44,11 @@ double operacionesMatriciales(int n) {
     delete[] matriz_b;
     delete[] resultado;
     
-    return std::chrono::duration_cast<std::chrono::microseconds>(fin - inicio).count() / 1000000.0;
+    return tiempo_ms;
 }
 
 int main() {
     std::cout << "Tiempo de ejecución para n=100: " 
-              << operacionesMatriciales(100) << " segundos\n";
+              << operacionesMatriciales(100) << " ms\n";
     return 0;
 }
