@@ -1,4 +1,4 @@
-package main
+package solve
 
 import (
     "fmt"
@@ -35,11 +35,11 @@ func operacionesMatriciales(n int) float64 {
         }
     }
     
-    fin := time.Since(inicio).Seconds()
+    fin := time.Since(inicio).Seconds() * 1000 // Convertir a milisegundos
     return fin
 }
 
 func main() {
-    fmt.Printf("Tiempo de ejecución para n=100: %.4f segundos\n", 
+    fmt.Printf("Tiempo de ejecución para n=100: %.4f ms\n", 
         operacionesMatriciales(100))
 }
