@@ -1,5 +1,5 @@
 FROM openjdk
+COPY . /app
 WORKDIR /app
-COPY . /app/
 RUN javac solve.java
 ENTRYPOINT ["java", "solve"]
