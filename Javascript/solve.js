@@ -1,3 +1,5 @@
+const fs = require('fs');  // Importa el módulo 'fs' para trabajar con archivos
+
 function operacionesMatriciales(n) {
     // Crear matrices de prueba
     let matriz_a = Array(n).fill().map((_, i) => 
@@ -28,4 +30,6 @@ function operacionesMatriciales(n) {
     return fin - inicio;
 }
 
-console.log(`Tiempo de ejecución para n=100: ${operacionesMatriciales(100).toFixed(4)} ms`);
+// Guardar el resultado en un archivo
+const tiempo = operacionesMatriciales(100).toFixed(4);
+fs.writeFileSync('resultado.txt', `Tiempo de ejecución para n=100: ${tiempo} ms\n`);
