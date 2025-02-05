@@ -1,4 +1,4 @@
-FROM openjdk
+FROM openjdk:alpine
 COPY . /app
 WORKDIR /app
 RUN javac solve.java
