@@ -48,6 +48,6 @@ double operacionesMatriciales(int n) {
 }
 
 int main() {
-    std::cout << operacionesMatriciales(100) << " ms\n";
+    std::cout << "C++: " << operacionesMatriciales(100) << " ms\n";
     return 0;
 }
