@@ -35,6 +35,6 @@ fn operaciones_matriciales(n: usize) -> f64 {
 }
 
 fn main() {
-    println!("{:.4} ms", 
+    println!("Rust: {:.4} ms", 
         operaciones_matriciales(100));
 }
