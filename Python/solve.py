@@ -19,7 +19,7 @@ def operaciones_matriciales(n):
     
     # Guardar el resultado en un archivo
     with open("resultadoPy.txt", "w") as archivo:
-        archivo.write(f"{tiempo_ejecucion:.4f} ms\n")
+        archivo.write(f"Python: {tiempo_ejecucion:.4f} ms\n")
     
     return tiempo_ejecucion
 
