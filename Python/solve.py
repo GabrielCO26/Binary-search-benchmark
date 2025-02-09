@@ -18,7 +18,7 @@ def operaciones_matriciales(n):
     tiempo_ejecucion = (fin - inicio) * 1000  # Convertir a milisegundos
     
     # Guardar el resultado en un archivo
-    with open("resultado.txt", "w") as archivo:
+    with open("resultadoPy.txt", "w") as archivo:
         archivo.write(f"Tiempo de ejecución para n={n}: {tiempo_ejecucion:.4f} ms\n")
     
     return tiempo_ejecucion
