@@ -32,4 +32,4 @@ function operacionesMatriciales(n) {
 
 // Guardar el resultado en un archivo
 const tiempo = operacionesMatriciales(100).toFixed(4);
-fs.writeFileSync('resultadoJs.txt', `${tiempo} ms\n`);
+fs.writeFileSync('resultadoJs.txt', `Javascript: ${tiempo} ms\n`);
