@@ -48,7 +48,6 @@ double operacionesMatriciales(int n) {
 }
 
 int main() {
-    std::cout << "Tiempo de ejecución para n=100: " 
-              << operacionesMatriciales(100) << " ms\n";
+    std::cout << operacionesMatriciales(100) << " ms\n";
     return 0;
 }
