@@ -29,6 +29,6 @@ public class solve {
     }
 
     public static void main(String[] args) {
-        System.out.print(operacionesMatriciales(100));
+        System.out.print(operacionesMatriciales(100)+" /ms");
     }
 }
