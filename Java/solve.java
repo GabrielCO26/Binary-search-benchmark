@@ -29,6 +29,6 @@ public class solve {
     }
 
     public static void main(String[] args) {
-        System.out.printlf("Java: ",operacionesMatriciales(100)," ms");
+        System.out.printf("Java: %.2f ms%n", operacionesMatriciales(100));
     }
 }
