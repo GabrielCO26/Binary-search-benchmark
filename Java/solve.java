@@ -29,7 +29,6 @@ public class solve {
     }
 
     public static void main(String[] args) {
-        System.out.printf("Tiempo de ejecución para n=100: %.4f ms%n", 
-            operacionesMatriciales(100));
+        System.out.print(operacionesMatriciales(100));
     }
 }
